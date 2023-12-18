@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form Element</h1>
+    <!-- get : จะเห็นหมดทุกค่า ไม่แนะนำกับการป้อนข้อมูลที่เป็นความลับ -->
+    <!-- post : ไม่แสดงค่าให้เห็น แสดงแค่actionปลายทาง -->
+    <!-- ไม่ตั้ง method : defultจะเป็น get -->
+    <form action="https://example.com/" method="get">
+      <!-- tpye="text" : พิมพ์ข้อความบรรทัดเดียว-->
+      <!-- value : ค่าที่element เก็บไว้ -->
+      <!-- name : ตั้งชื่อ-->
+      <!-- placeholder : บอกอธิบาย -->
+      <label for="username">Username :</label>
+      <input
+        type="text"
+        name="username"
+        value=""
+        placeholder="Please input username"
+        size="20"
+        maxlength="20"
+      />
+
+      <br />
+
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        name="email"
+        value=""
+        placeholder="Please input email"
+        size="30"
+      />
+
+      <br />
+      <label for="password">Password :</label>
+      <input
+        type="password"
+        name="password"
+        value=""
+        placeholder="Password"
+        size="30"
+      />
+
+      <br />
+
+      <label for="address">Address :</label>
+      <textarea name="address" cols="30" rows="10">
+        บ้านเลขที่ 8/177 ซ.พาณิชย์ ถ.ศรีวิชัย ต.มะขามเตี้ย อ.เมือง จ.สุราษฎร์ธานี 84000
+        </textarea
+      >
+
+      <br />
+
+      <label for="gender">Gender :</label>
+      <input type="radio" name="gender" value="m" /> Male
+      <input type="radio" name="gender" value="f" /> Female
+      <input type="radio" name="gender" value="lgbtq" /> LGBTQ+
+
+      <br />
+
+      <label for="brithday">Brithday : </label>
+      <input type="date" name="brithday" />
+
+      <br />
+
+      <label for="sources">Sources : </label>
+      <input type="checkbox" name="friends" value="Friends" /> Friends
+      <input type="checkbox" name="internet" value="Internet" /> Internet
+      <input type="checkbox" name="radio" value="Radio" /> Radio
+
+      <br />
+
+      <label for="department">Department : </label>
+      <select name="dept">
+        <option value="1">IT</option>
+        <option value="2">Chemistry</option>
+        <option value="3">Engineer</option>
+        <option value="4">Enviroment</option>
+      </select>
+
+      <br />
+
+      <label for="profilepic">Upload File :</label>
+      <input type="file" name="profilepic" />
+
+      <br />
+
+      <input type="submit" value="ลงทะเบียน" />
+      <input type="reset" value="ยกเลิก" />
+      <br />
+    </form>
+  </body>
+</html>

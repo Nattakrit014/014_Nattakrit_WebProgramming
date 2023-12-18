@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Active Learning 3 : Form</title>
+  </head>
+  <body>
+    <h1>รายชื่อนักศึกษา</h1>
+    <ol>
+      <li>6540011014 นาย ณัฐกฤต สร้อยสนธิ์</li>
+      <li>6540011059 นาย ณัฐชยกนธ์ ภาสกนธ์</li>
+    </ol>
+    <h1>แบบฟอร์มลงทะเบียนศิษย์เก่า IT + IS</h1>
+    <form action="https://example.com/" method="get">
+      <label for="name">ชื่อ :</label>
+      <input type="text" name="name" value="" placeholder="กรุณากรอกชื่อ" />
+
+      <br />
+      <label for="lastname">นามสกุล :</label>
+      <input
+        type="text"
+        name="lastname"
+        value=""
+        placeholder="กรุณากรอกนามสกุล"
+      />
+
+      <br />
+      <label for="idstudent">รหัสนักศึกษา :</label>
+      <input
+        type="text"
+        name="idstudent"
+        value=""
+        maxlength="10"
+        placeholder="กรุณากรอกรหัสนักศึกษา"
+      />
+
+      <br />
+      <label for="gender">เพศ :</label>
+      <input type="radio" name="gender" value="Male" /> เพศชาย
+      <input type="radio" name="gender" value="Female" /> เพศหญิง
+
+      <br />
+      <label for="yearentry">ปีการศึกษาเข้าศึกษา : </label>
+      <input
+        type="text"
+        name="yearentry"
+        maxlength="4"
+        placeholder="ปีการศึกษาเข้าศึกษา(พ.ศ.)"
+      />
+
+      <br />
+      <label for="address">ที่อยู่ :</label>
+      <textarea
+        name="address"
+        placeholder="กรุณากรอกที่อยู่"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <br />
+      <label for="email">อีเมลล์ :</label>
+      <input
+        type="email"
+        name="email"
+        value=""
+        size="30"
+        placeholder="กรุณากรอกอีเมลล์"
+      />
+
+      <br />
+      <label for="phone">เบอร์โทรติดต่อ :</label>
+      <input
+        type="tel"
+        name="tel"
+        maxlength="10"
+        placeholder="xxxxxxxxxx"
+      />
+
+      <br />
+
+      <label for="major">หลักสูตร :</label>
+      <select name="major">
+        <option value="IT">IT</option>
+        <option value="IS">IS</option>
+      </select>
+
+      <br />
+      <label for="career">อาชีพปัจจุบัน :</label>
+      <input
+        type="text"
+        name="career"
+        value=""
+        placeholder="กรุณากรอกชื่ออาชีพปัจจุบัน"
+      />
+
+      <br />
+      <label for="company">สถานที่ทำงาน :</label>
+      <textarea
+        name="name-addcomp"
+        placeholder="กรุณากรอกชื่อบริษัทและที่อยู่บริษัท"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <br>
+      <label for="jobtype">ประเภทงานที่ทำ :</label>
+      <select name="" id="">
+        <option value="webdev">Web Developer</option>
+        <option value="sa">SA</option>
+        <option value="graphic">Graphic Design</option>
+        <option value="digimarketing">Digital Marketing</option>
+      </select>
+
+      <br>
+      <label for="profilepic">รูปถ่ายตนเอง :</label>
+      <input type="file" name="profilepic">
+
+
+      <br />
+      <input type="submit" value="ลงทะเบียน"/>
+      <input type="reset" value="ล้างข้อมูล">
+    </form>
+    <a href="../index.html">Home</a>
+  </body>
+</html>
