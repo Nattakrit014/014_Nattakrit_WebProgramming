@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inclass Box Model</title>
+  </head>
+  <style>
+    .main {
+      text-align: center;
+      border: 3px double;
+      width: 1000px;
+      padding: 30px;
+      margin:20px auto;
+    }
+    .logotext {
+      text-transform: uppercase;
+    }
+    .firsttext,
+    .maintext,
+    .subtext {
+      margin: 0;
+    }
+    .menu > li {
+      display: inline;
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+    .menu {
+      width: 60%;
+      margin: 10px auto;
+      padding-left: 0;
+      border-top: 4px solid;
+      border-bottom: 2px solid;
+      padding: 10px 0;
+      letter-spacing: 2px;
+    }
+    .mainpic {
+      width: 300px;
+    }
+    .footer{
+        width: 80%;
+        margin: 10px auto;
+        letter-spacing: 2px;
+    }
+  </style>
+
+  <body>
+    <div class="main">
+      <div class="logotext">
+        <p class="firsttext">the</p>
+        <h1 class="maintext">analog</h1>
+        <h2 class="subtext">specialists</h2>
+      </div>
+
+      <ul class="menu">
+        <li>Home</li>
+        <li>for sale</li>
+        <li>repairs</li>
+        <li>about</li>
+        <li>contact</li>
+      </ul>
+
+      <img class="mainpic" src="image/piano_5.jpg" alt="piano" />
+      <img class="mainpic" src="image/piano_3.jpg" alt="piano" />
+      <img class="mainpic" src="image/piano_4.jpg" alt="piano" />
+
+      <div class="footer">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+          inventore odit. Nulla, assumenda fugiat odio vel aliquid voluptatibus
+          neque eos nihil deleniti exercitationem, in alias. Temporibus vel
+          architecto quisquam ea!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

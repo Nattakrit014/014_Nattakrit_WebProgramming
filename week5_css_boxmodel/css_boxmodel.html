@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      h1 {
+        width: 150px;
+        padding: 10px;
+        border: 4px solid blueviolet;
+        margin: 30px;
+        background-color: lightpink;
+      }
+
+      p {
+        background-color: lightblue;
+        width: 300px;
+      }
+
+      span {
+        background-color: tomato;
+      }
+      .div1,.div2{/*กรณีใช้รูปแบบร่วมกัน*/
+        width: 300px;
+        
+      }
+
+      .div1{
+        margin: 50px 20px 30px 40px;
+            /* top right bottom left */
+        /* margin: 50px 60px;
+                /*top and bottom  right and left */
+        padding: 25px;
+        background-color: lightcoral;
+        border: 5px solid black;
+        border-radius: 20px;
+      }
+      .div2{
+        margin: 10px;
+        margin-left: 60px;
+        padding: 10px;
+        background-color: lightgreen;
+        border: 5px solid blue;
+      }
+      li{
+        display: inline;
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Box Model</h1>
+    <p>
+      Lorem <span>ipsum dolor sit amet</span>, consectetur adipisicing elit.
+      Minus at rem ea ut, enim nesciunt impedit voluptatibus, molestiae nam
+      doloremque atque dicta sequi nisi nobis facilis dolores voluptatem
+      obcaecati culpa?
+    </p>
+
+    <div class="div1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id reiciendis
+      libero deserunt nihil vero, iusto nesciunt sunt non voluptatem quos culpa
+      odio placeat. Commodi adipisci, quam ut nostrum id a?
+    </div>
+
+    <div class="div2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci porro,
+      debitis aliquid harum hic magnam ex. Error animi fuga similique, ipsa
+      molestias iste, nam labore, illo eaque quod blanditiis qui.
+    </div>
+
+    <ul>
+        <li>Box Model</li>
+        <li>Page Layout</li>
+        <li>ect.</li>
+    </ul>
+  </body>
+</html>
