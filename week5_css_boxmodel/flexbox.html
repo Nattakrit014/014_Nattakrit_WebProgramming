@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container , .container2{
+        display: flex;
+        flex-direction: row; /*defult*/
+        /* flex-direction: column; */
+        width: 90%;
+        border: 1px solid red;
+        justify-content: space-around; /*กำหนดที่แม่ ลูกเลื่อนไปเอง*/
+        margin: 10px;
+        flex-wrap: wrap;
+      }
+      .col{
+        width: 30%;
+        border: 1px solid;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      .col2{
+        width: 50%;
+        border: 1px solid;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum est
+        quaerat sed suscipit vero laudantium, consectetur alias error distinctio
+        similique quas unde consequatur expedita maiores! Quibusdam quasi
+        consequatur voluptas optio?
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum est
+        quaerat sed suscipit vero laudantium, consectetur alias error distinctio
+        similique quas unde consequatur expedita maiores! Quibusdam quasi
+        consequatur voluptas optio?
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum est
+        quaerat sed suscipit vero laudantium, consectetur alias error distinctio
+        similique quas unde consequatur expedita maiores! Quibusdam quasi
+        consequatur voluptas optio?
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum est
+        quaerat sed suscipit vero laudantium, consectetur alias error distinctio
+        similique quas unde consequatur expedita maiores! Quibusdam quasi
+        consequatur voluptas optio?
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum est
+        quaerat sed suscipit vero laudantium, consectetur alias error distinctio
+        similique quas unde consequatur expedita maiores! Quibusdam quasi
+        consequatur voluptas optio?
+      </div>
+    </div>
+    <div class="container2">
+        <div class="col2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quam,
+        ipsam perspiciatis facilis tempora minus officia. Necessitatibus minima
+        amet, excepturi quaerat velit, dolorum repellat delectus aliquam, odio
+        veritatis placeat quibusdam!
+      </div>
+      <div class="col2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quam,
+        ipsam perspiciatis facilis tempora minus officia. Necessitatibus minima
+        amet, excepturi quaerat velit, dolorum repellat delectus aliquam, odio
+        veritatis placeat quibusdam!</div>
+  </body>
+</html>

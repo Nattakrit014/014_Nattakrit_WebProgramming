@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+    <style>
+      .news1 {
+        position: relative;
+        width: 300px;
+        margin: 10px;
+        border: 1px solid purple;
+        padding: 10px;
+        background-color: lightyellow;
+      }
+      .news2 {
+        position: relative; /*ยึดจากตำแหน่งปัจจุบันเยื่องเข้าไป*/
+        left: 250px;
+        bottom: -25px; /*ติดลบคือลงล่าง*/
+        width: 300px;
+        margin: 10px;
+        border: 1px solid purple;
+        padding: 10px;
+        background-color: lightyellow;
+      }
+      .readmore {
+        position: absolute; /*ยึดจากตำแหน่งของตัวแม่*/
+        top: 8px;
+        right: 8px;
+        color: black;
+        width: 100px;
+        padding: 10px;
+        background-color: yellow;
+        border: 1px solid;
+      }
+      .footer {
+        margin: 0 auto;
+        width: 500px;
+      }
+      .promotion {
+        position: fixed; /*scollหน้าเว็บแล้วยังเห็นอยู่*/
+        top: 10px;
+        right: 10px;
+        width: 350px;
+        font-size: 68px;
+        color: red;
+        background-color: greenyellow;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="promotion">Promotion!</div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+      quisquam, enim corrupti architecto accusantium nostrum, nihil amet
+      similique non fuga natus sit illum, ipsa consectetur dignissimos minima
+      dolorum iusto magni?
+    </p>
+    <div class="news1">
+      <h1>News1</h1>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, sequi.
+      Laborum corporis eum quidem et? Exercitationem cum dolorem sapiente
+      voluptatibus. Eaque, tenetur. Maiores sequi cumque quisquam modi quo fuga
+      dolore.
+
+      <div class="readmore">Read More</div>
+    </div>
+    <div class="news2">
+      <h1>News2</h1>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, sequi.
+      Laborum corporis eum quidem et? Exercitationem cum dolorem sapiente
+      voluptatibus. Eaque, tenetur. Maiores sequi cumque quisquam modi quo fuga
+      dolore.
+    </div>
+
+    <div class="footer">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+      accusamus voluptas iure corporis mollitia ipsam quos, necessitatibus odio
+      veritatis nisi, rem iste sapiente. Laboriosam doloremque non eligendi
+      delectus reprehenderit unde! Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Quos ipsam esse iure corporis magni facere beatae, eius
+      explicabo voluptates, dolore, cum temporibus neque amet hic similique
+      aliquam provident quam magnam. Quam natus asperiores doloribus corrupti,
+      itaque animi quae quidem possimus commodi dolorem, doloremque ducimus
+      provident labore hic alias distinctio minima totam mollitia repudiandae
+      facilis veniam cupiditate voluptatibus porro reiciendis! Laudantium.
+      Minima magni dolorem expedita quae pariatur modi ex, fuga atque explicabo,
+      suscipit earum alias, optio architecto ullam minus? Laboriosam quia
+      voluptatem dolor ratione ipsa eius earum, vel provident non architecto.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit eos beatae
+      necessitatibus explicabo itaque dolores. Ipsum a praesentium adipisci quod
+      reprehenderit, rerum dicta repudiandae expedita deserunt ullam, magni iure
+      dolore. Sequi non debitis, deserunt, itaque iure facilis quas quidem
+      molestiae deleniti cupiditate unde accusamus, rem nobis quae tempora
+      repellendus quos. Ratione odio beatae consequuntur quasi culpa reiciendis
+      minima recusandae ipsum! Esse sit, ducimus quis qui quo tenetur ad et
+      nihil sint. Unde, quidem distinctio repudiandae error tempore repellendus
+      hic non esse labore totam atque nesciunt fugiat officiis suscipit,
+      corrupti cumque! Voluptatum delectus dicta ratione. Nisi aliquid, tempore
+      ipsam praesentium similique magnam sapiente officiis veniam, natus
+      possimus aperiam totam esse minus incidunt quidem vitae id consequatur
+      corporis quasi! Sit, at odio! Quidem, impedit. Atque, odio delectus hic
+      ipsa adipisci rem nostrum nihil! Nobis, sint magni voluptates sed ipsam
+      animi, adipisci dignissimos unde velit maiores culpa consectetur tempore
+      voluptas esse illo eius. Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Ullam repellat dolores sapiente iusto velit quod
+      eligendi corporis, blanditiis alias. Molestias voluptas eius, amet cumque
+      velit sint. Alias ad perspiciatis nulla.
+    </div>
+  </body>
+</html>
