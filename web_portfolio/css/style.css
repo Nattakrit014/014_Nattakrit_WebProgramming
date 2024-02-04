@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&display=swap");
+
+body {
+  font-family: "Mitr", sans-serif;
+}
+header {
+  border-bottom: 2px solid #c1a875;
+  background-color: #091638;
+}
+.textcolorlight {
+  color: #e4dcd9;
+}
+.textlinkmenusize {
+  font-size: 25px;
+}
+.textheaderlogo {
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.menulistcustom li {
+  font-size: 20px;
+  font-weight: 400;
+}
+.hrmenubar {
+  border: 2px solid white;
+  margin-top: 0;
+}
+#home {
+  background-color: #091638;
+}
+.homehead {
+  width: fit-content;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to left,
+    #9a907e,
+    #8b816f,
+    #ac9f87,
+    #ccb68a,
+    #c5b085,
+    #b4a27e,
+    #807563
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+#home p {
+  color: #e4dcd9;
+  font-size: 21px;
+  font-weight: lighter;
+}
+.btn-custom-home {
+  background-color: #e4dcd9;
+  color: #091638;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+#home .homeleft {
+  padding-top: 250px;
+  height: 900px;
+}
+#home a:hover {
+  color: #e4dcd9;
+  cursor: pointer;
+}
+.hovermenu a:hover {
+  color: white;
+  text-decoration: underline #e4dcd9;
+  text-underline-offset: 0.25em;
+}
+.profileimg {
+  width: 85%;
+  padding-top: 100px;
+}
+.homehead h3 {
+  font-size: 35px;
+}
+.homehead h1 {
+  font-size: 55px;
+}
+.text-aboutme {
+  font-size: 64px;
+  color: #e4dcd9;
+  -webkit-text-stroke: 1px black;
+}
+.usericon {
+  width: 12%;
+  margin-left: -2%;
+}
+#about-me {
+  background: linear-gradient(to right, #bca17f 50%, #fff 50%);
+}
+.img-aboutme{
+  text-align: center;
+  width: 85%;
+  height: auto;
+}
+.personal h1,
+.education h1 {
+  font-size: 40px;
+  color: #091638;
+}
+.personalsubTP,
+.personalinfo,
+.edusubTP,
+.eduinfo {
+  font-size: 26px;
+}
+.personalsubTP,
+.edusubTP {
+  font-weight: 500;
+  margin-top: 2rem;
+}
+.personalinfo,
+.eduinfo {
+  font-weight: 400;
+}
+.personal {
+  margin-bottom: 10rem;
+}
+#exercises h1{
+  color: #091638;
+}
+#exercises img{
+  margin-left: -1rem;
+}
+.card-img-top {
+  margin: 1rem auto;
+  height: 200px;
+  width: 100%;
+}
+.btn-view-custom {
+  background-color: #4c3127;
+  color: white;
+  width: 120px;
+}
+#contact{
+  background-color: #091638;
+  color:#e4dcd9 ;
+}
+.logo-contact-custom{
+  width: 3rem;
+}
