@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* .container {
+        display: flex;
+      }
+      .col1,
+      .col2,
+      .col3 {
+        background-color: lightblue;
+        float: left;
+        margin: 5px;
+        padding: 5px;
+      }
+      .col1 {
+        width: 60%;
+      }
+      .col2 {
+        width: 20%;
+      }
+      .col3 {
+        width: 20%;
+      } */
+      .bgColor {
+        background-color: lightblue;
+      }
+      .headingnews {
+        font-size: 100px;
+      }
+      /* reponsive */
+      @media (max-width: 575.98px) { /*ถ้าหน้าจอไม่เกิน 575.98*/
+        .headingnews {
+          display: none;
+          font-size: 64px;
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="col1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+        temporibus sint libero earum totam inventore sed magnam itaque quisquam,
+        corrupti quidem exercitationem explicabo neque rem quod? Illo sint
+        provident commodi?
+      </div>
+      <div class="col2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi doloribus
+        at saepe earum modi molestiae, optio molestias perspiciatis? Fugiat
+        sapiente nesciunt consequuntur. Dolorum suscipit corrupti laboriosam
+        ratione debitis sed facere.
+      </div>
+      <div class="col3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+        adipisci repellendus quibusdam dolorem? Aliquam nobis, necessitatibus
+        rem delectus itaque similique saepe ipsam mollitia odio asperiores!
+        Natus, quam asperiores! Amet, molestias.
+      </div> -->
+      <div class="row">
+        <div class="col-sm-12 col-md-6 bgColor">
+          <h1 class="headingnews">Heading 1</h1>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+          reiciendis nulla rerum, iste voluptas quae voluptates aliquid eos,
+          quasi voluptatibus ut aliquam ullam dolore eius repellat
+          necessitatibus laboriosam assumenda tempora.
+        </div>
+        <div class="col-sm-6 col-md-3 bgColor">
+          <h1>Heading 2</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          ullam commodi. Omnis assumenda recusandae vel perspiciatis, voluptas
+          illo quibusdam vero velit! Incidunt voluptatibus atque eaque odit
+          corporis provident, illo velit.
+        </div>
+        <div class="col-sm-6 col-md-3 bgColor">
+          <h1>Heading 3</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic ad
+          voluptatem aliquid magni. Voluptatibus aperiam repellat saepe
+          molestias. Quidem nostrum, aut saepe hic quod amet! Delectus a tempora
+          ipsam.
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
