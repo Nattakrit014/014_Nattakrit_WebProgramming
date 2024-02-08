@@ -23,7 +23,7 @@
             width="70"
             class="d-inline-block align-text-top me-2"
           />
-          <a class="navbar-brand textcolorlight textheaderlogo" href="#">
+          <a class="navbar-brand textheaderlogo" href="#home">
             Nattakrit Soison</a
           >
           <button
@@ -38,35 +38,27 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menulistcustom">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item hovermenu">
                 <a
-                  class="nav-link textcolorlight me-5 textlinkmenusize"
+                  class="nav-link textmenucustom me-5"
                   aria-current="page"
                   href="#home"
                   >Home</a
                 >
               </li>
               <li class="nav-item hovermenu">
-                <a
-                  class="nav-link textcolorlight me-5 textlinkmenusize"
-                  href="#about-me"
+                <a class="nav-link textmenucustom me-5" href="#about-me"
                   >About Me</a
                 >
               </li>
               <li class="nav-item hovermenu">
-                <a
-                  class="nav-link textcolorlight me-5 textlinkmenusize"
-                  href="#exercises"
+                <a class="nav-link textmenucustom me-5" href="#exercises"
                   >Exercises</a
                 >
               </li>
               <li class="nav-item hovermenu">
-                <a
-                  class="nav-link textcolorlight textlinkmenusize"
-                  href="#contact"
-                  >Contact</a
-                >
+                <a class="nav-link textmenucustom" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -77,15 +69,17 @@
     <main>
       <section id="home">
         <div class="container">
-          <div class="row">
-            <div class="col-7 homeleft">
-              <div class="homehead">
+          <div class="row pt-5">
+            <div
+              class="col-lg-7 col-md-12 col-sm-12 align-self-center home-start-side"
+            >
+              <div class="home-name-textcolor">
                 <h3 class="mb-4">hello there ,</h3>
                 <h1 class="mb-4">i'm nattakrit soison</h1>
               </div>
               <p class="mb-4">
-                &nbsp;&nbsp;&nbsp;&nbsp;Student of information technology,
-                Prince of Songkla University, Surat Thani Campus
+                Student of information technology, Prince of Songkla University,
+                Surat Thani Campus
               </p>
               <a
                 class="btn btn-lg btn-custom-home"
@@ -94,10 +88,10 @@
                 >get to know me</a
               >
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 align-self-center text-center">
               <img
+                class="profileimg"
                 src="web_portfolio/images/profileimg.svg"
-                class="profileimg mx-auto d-block"
                 alt="profileimg"
               />
             </div>
@@ -108,8 +102,8 @@
       <section id="about-me">
         <div class="container">
           <div class="row py-5">
-            <div class="col-6">
-              <h1 class="text-aboutme">
+            <div class="col-lg-6 col-md-12">
+              <h1 class="text-head-aboutme">
                 About Me
                 <img
                   src="web_portfolio/images/user_logo.svg"
@@ -117,16 +111,16 @@
                   alt="usericon"
                 />
               </h1>
-              <div class="img-aboutme mx-auto">
+              <div class="img-aboutme">
                 <img
                   src="web_portfolio/images/aboutme_img.svg"
-                  class="img-fluid "
+                  class="img-fluid"
                   alt="aboutme_img"
                 />
               </div>
             </div>
-            <div class="col-6 ps-5">
-              <div class="personal">
+            <div class="col-lg-6 col-md-12 ps-5">
+              <div class="personal mt-4">
                 <h1>ประวัติส่วนตัว</h1>
                 <div class="personalsubTP mb-4">
                   ชื่อ-นามสกุล :
@@ -154,10 +148,10 @@
                 <div class="edusubTP mb-4">
                   สาขา : <span class="eduinfo">เทคโนโลยีสารสนเทศ</span>
                 </div>
-                <div class="eduinfo mb-4">
+                <div class="edusubTP mb-4">
                   มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี
                 </div>
-                <div class="edusubTP mb-4">รหัสนักศึกษา : 6540011014</div>
+                <div class="edusubTP">รหัสนักศึกษา : 6540011014</div>
               </div>
             </div>
           </div>
@@ -169,74 +163,112 @@
           <h1 class="my-3">
             Exercises
             <img
+              class="logoexercies"
               src="web_portfolio/images/exeercise_logo.svg"
               alt="exercise_logo"
             />
           </h1>
-          <div class="row">
-            <div class="col-6 text-center">
-              <!-- ex1 -->
-              <div class="card mx-auto" style="width: 30rem">
+          <div class="row row-cols-1 row-cols-sm-2 g-3 mt-3">
+            <div
+              class="col-md-12 col-sm-12 col-lg-6 text-center d-flex align-items-stretch mb-5"
+            >
+              <div class="card mx-auto">
                 <img
                   src="web_portfolio/images/www_img.svg"
                   class="card-img-top"
                   alt="exe1"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <p class="card-text">
-                    วาดภาพอธิบายสถาปัตยกรรมของเทคโนโลยี World Wide Web
-                  </p>
-                  <a href="week1/ex1.html" class="btn btn-view-custom">View</a>
-                </div>
-              </div>
-              <!-- ex3 -->
-              <div class="card mt-5 mx-auto" style="width: 30rem">
-                <img
-                  src="web_portfolio/images/form-ex-img.svg"
-                  class="card-img-top"
-                  alt="exe3"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    สร้างเว็บเพจออกแบบฟอร์มลงทะเบียนศิษย์เก่า IT + IS
+                    EX 1 : วาดภาพอธิบายสถาปัตยกรรมของเทคโนโลยี World Wide Web
                   </p>
                   <a
-                    href="week3LinkandForm/ex3_014_059.html"
-                    class="btn btn-view-custom"
+                    href="week1/ex1.html"
+                    class="btn btn-view-custom mt-auto align-self-center"
                     >View</a
                   >
                 </div>
               </div>
             </div>
-            <!-- ex2 -->
-            <div class="col-6 text-center">
-              <div class="card mx-auto" style="width: 30rem">
+
+            <div
+              class="col-md-12 col-sm-12 col-lg-6 text-center d-flex align-items-stretch mb-5"
+            >
+              <div class="card mx-auto">
                 <img
                   src="web_portfolio/images/food-ex-img.svg"
                   class="card-img-top"
                   alt="exe2"
                 />
-                <div class="card-body">
-                  <p class="card-text">สร้างเว็บเพจเมนูอาหารที่ท่านชื่นชอบ</p>
+                <div class="card-body d-flex flex-column">
+                  <p class="card-text">
+                    Ex 2 : สร้างเว็บเพจเมนูอาหารที่ท่านชื่นชอบ
+                  </p>
                   <a
                     href="week2/exercise2_food/ex2_withCSS.html"
-                    class="btn btn-view-custom"
+                    class="btn btn-view-custom mt-auto align-self-center"
                     >View</a
                   >
                 </div>
               </div>
-              <!-- exe4 -->
-              <div class="card mt-5 mx-auto" style="width: 30rem">
+            </div>
+
+            <div
+              class="col-md-12 col-sm-12 col-lg-6 text-center d-flex align-items-stretch mb-5"
+            >
+              <div class="card mx-auto">
+                <img
+                  src="web_portfolio/images/form-ex-img.svg"
+                  class="card-img-top"
+                  alt="exe3"
+                />
+                <div class="card-body d-flex flex-column">
+                  <p class="card-text">
+                    Ex 3 : สร้างเว็บเพจออกแบบฟอร์มลงทะเบียนศิษย์เก่า IT + IS
+                  </p>
+                  <a
+                    href="week3LinkandForm/ex3_014_059.html"
+                    class="btn btn-view-custom mt-auto align-self-center"
+                    >View</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-12 col-sm-12 col-lg-6 text-center d-flex align-items-stretch mb-5"
+            >
+              <div class="card mx-auto">
                 <img
                   src="web_portfolio/images/ex4-img.svg"
                   class="card-img-top"
                   alt="exe4"
                 />
-                <div class="card-body">
-                  <p class="card-text">สร้างเว็บเพจโดย Bootstrap</p>
+                <div class="card-body d-flex flex-column">
+                  <p class="card-text">Ex 4 : สร้างเว็บเพจโดย Bootstrap</p>
                   <a
                     href="week6_bootstrap_responsive/bootstrap.html"
-                    class="btn btn-view-custom"
+                    class="btn btn-view-custom mt-auto align-self-center"
+                    >View</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-12 col-md-12 col-lg-6 text-center d-flex align-items-stretch mb-5"
+            >
+              <div class="card mx-auto">
+                <img
+                  src="web_portfolio/images/login-img.svg"
+                  class="card-img-top"
+                  alt="exe4"
+                />
+                <div class="card-body d-flex flex-column">
+                  <p class="card-text">Ex 5 : Check Form Login</p>
+                  <a
+                    href="week8_javascript/login.html"
+                    class="btn btn-view-custom mt-auto align-self-center"
                     >View</a
                   >
                 </div>
@@ -253,26 +285,42 @@
           <div class="col">
             <h1 class="my-4">Contact</h1>
             <div class="group-contact-icon my-4">
-              <img
-                src="web_portfolio/images/instagram_icon.svg"
-                class="logo-contact-custom me-4"
-                alt="instagram_icon"
-              />
-              <img
-                src="web_portfolio/images/facebook_icon.svg"
-                class="logo-contact-custom me-4"
-                alt="facebook_icon"
-              />
-              <img
-                src="web_portfolio/images/line_icon.svg"
-                class="logo-contact-custom me-4"
-                alt="line_icon"
-              />
-              <img
-                src="web_portfolio/images/email_icon.svg"
-                class="logo-contact-custom me-4"
-                alt="email_icon"
-              />
+              <a
+                href="https://www.instagram.com/teem_nttss/?igsh=MWE5eDZtNWc3dDZrcw%3D%3D&fbclid=IwAR2sX8BMINJwbfEiJu9ecCj6XC0k-LRygre-0eAUP7y8eStuEeWwUPkHNH8"
+                target="_blank"
+                role="button"
+                ><img
+                  src="web_portfolio/images/instagram_icon.svg"
+                  class="logo-contact-custom me-4"
+                  alt="instagram_icon"
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100013129058729"
+                target="_blank"
+                role="button"
+                ><img
+                  src="web_portfolio/images/facebook_icon.svg"
+                  class="logo-contact-custom me-4"
+                  alt="facebook_icon"
+              /></a>
+              <a
+                href="https://line.me/ti/p/-egzMiQ_q1"
+                target="_blank"
+                role="button"
+                ><img
+                  src="web_portfolio/images/line_icon.svg"
+                  class="logo-contact-custom me-4"
+                  alt="line_icon"
+              /></a>
+              <a
+                href="mailto:nattakrit0707@gmail.com"
+                target="_blank"
+                role="button"
+                ><img
+                  src="web_portfolio/images/email_icon.svg"
+                  class="logo-contact-custom me-4"
+                  alt="line_icon"
+              /></a>
             </div>
           </div>
         </div>
