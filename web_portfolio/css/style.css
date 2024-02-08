@@ -7,29 +7,28 @@ header {
   border-bottom: 2px solid #c1a875;
   background-color: #091638;
 }
-.textcolorlight {
-  color: #e4dcd9;
-}
-.textlinkmenusize {
-  font-size: 25px;
-}
+/* menubar */
 .textheaderlogo {
+  color: #e4dcd9;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: calc(80% + 3vmin);
   text-transform: uppercase;
 }
-.menulistcustom li {
-  font-size: 20px;
-  font-weight: 400;
+.textmenucustom {
+  color: #e4dcd9;
+  font-size: calc(70% + 2vmin);
 }
-.hrmenubar {
-  border: 2px solid white;
-  margin-top: 0;
+.hovermenu a:hover {
+  color: white;
+  text-decoration: underline #e4dcd9;
+  text-underline-offset: 0.25em;
 }
+/* home */
 #home {
   background-color: #091638;
+  height: 45rem;
 }
-.homehead {
+.home-name-textcolor {
   width: fit-content;
   text-transform: uppercase;
   background-image: linear-gradient(
@@ -47,9 +46,15 @@ header {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-#home p {
+.home-start-side h3 {
+  font-size: calc(90% + 2vmin);
+}
+.home-start-side h1 {
+  font-size: calc(90% + 5.5vmin);
+}
+.home-start-side p {
   color: #e4dcd9;
-  font-size: 21px;
+  font-size: calc(70% + 0.8vmin);
   font-weight: lighter;
 }
 .btn-custom-home {
@@ -61,61 +66,48 @@ header {
   padding: 20px 30px;
   border-radius: 20px;
 }
-#home .homeleft {
-  padding-top: 250px;
-  height: 900px;
-}
 #home a:hover {
   color: #e4dcd9;
-  cursor: pointer;
 }
-.hovermenu a:hover {
-  color: white;
-  text-decoration: underline #e4dcd9;
-  text-underline-offset: 0.25em;
-}
+
 .profileimg {
-  width: 85%;
-  padding-top: 100px;
+  width: 25rem;
 }
-.homehead h3 {
-  font-size: 35px;
+/* about me */
+#about-me {
+  background: linear-gradient(to right, #bca17f 50%, #fff 50%);
+  border-bottom: 2px solid #c1a875;
 }
-.homehead h1 {
-  font-size: 55px;
-}
-.text-aboutme {
-  font-size: 64px;
+.text-head-aboutme {
+  font-size: calc(80% + 5vmin);
   color: #e4dcd9;
   -webkit-text-stroke: 1px black;
 }
 .usericon {
-  width: 12%;
+  max-width: 5rem;
   margin-left: -2%;
 }
-#about-me {
-  background: linear-gradient(to right, #bca17f 50%, #fff 50%);
-}
-.img-aboutme{
-  text-align: center;
-  width: 85%;
-  height: auto;
+
+.img-aboutme {
+  max-width: 35rem;
+  margin: auto;
+  padding: 2rem 0;
 }
 .personal h1,
 .education h1 {
-  font-size: 40px;
+  font-size: calc(70% + 3vmin);
   color: #091638;
 }
 .personalsubTP,
 .personalinfo,
 .edusubTP,
 .eduinfo {
-  font-size: 26px;
+  font-size: calc(75% + 1vmin);
 }
 .personalsubTP,
 .edusubTP {
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .personalinfo,
 .eduinfo {
@@ -124,26 +116,58 @@ header {
 .personal {
   margin-bottom: 10rem;
 }
-#exercises h1{
+#exercises h1 {
+  font-size: calc(80% + 4vmin);
   color: #091638;
 }
-#exercises img{
+.logoexercies {
+  max-width: 5rem;
   margin-left: -1rem;
+}
+.card {
+  width: 28rem;
 }
 .card-img-top {
   margin: 1rem auto;
   height: 200px;
-  width: 100%;
+  max-width: 100%;
+}
+.card-text{
+  font-size: calc(70% + 1vmin);
 }
 .btn-view-custom {
   background-color: #4c3127;
   color: white;
   width: 120px;
 }
-#contact{
+#contact {
   background-color: #091638;
-  color:#e4dcd9 ;
+  color: #e4dcd9;
 }
-.logo-contact-custom{
-  width: 3rem;
+.logo-contact-custom {
+  max-width: 2.5rem;
+}
+@media (max-width: 767.98px) {
+  .profileimg {
+    display: none;
+  }
+  .home-start-side {
+    padding: 20% 0;
+    text-align: center;
+    font-size: 4vw;
+  }
+  #about-me {
+    background: linear-gradient(to bottom, #bca17f 50%, #fff 50%);
+  }
+  .text-head-aboutme {
+    margin: -1rem auto auto 0rem;
+  }
+  .img-aboutme {
+    padding: 0;
+    max-width: 24rem;
+    margin: 1rem auto 3rem auto;
+  }
+  .personal {
+    margin-bottom: 4rem;
+  }
 }
