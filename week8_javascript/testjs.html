@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <script>
+      function convert_CelsiusToFahrenheit(c) {
+        let f = c * (9 / 5) + 32;
+        return f;
+      }
+      function convert_FahrenheitToCelsius(f) {
+        let celsius = ((f - 32) * 5) / 9;
+        return celsius;
+      }
+      //   function check_oddeven(x){
+      //     if(x % 2 == 0){
+      //         document.write("is even number")
+      //     }else{
+      //         document.write("is odd number")
+      //     }
+      //   }
+      function oddeven(x) {
+        let r = x % 2;
+        if (r == 0) {
+          document.write(x + " is even number");
+        } else {
+          document.write(x + " is odd number");
+        }
+      }
+
+      function hourTosecond(h) {}
+    </script>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <script>
+      let name = "Nattakrit";
+      //   document.write("Hello JavaScript ");
+      //   document.write(name);
+
+      //   c = confirm("Are you sure?");
+      //   if (c) {
+      //     document.write("Hello " + name);
+      //   } else {
+      //     document.write("Goodbye " + name);
+      //   }
+
+      //   Array
+      let dept;
+      let sum = 0;
+      let scores = [10, 20, 15, 80, 34];
+      //   document.write(scores[2]);
+      for (var i = 0; i < 5; i++) {
+        document.writeln(scores[i] + "<br>");
+        sum += scores[i];
+      }
+      document.write("sum = " + sum + "<br>");
+      document.write("Avg = " + sum / scores.length + "<br>");
+      document.write("Max = " + Math.max(...scores)  + "<br>");
+      //   document.write(dept);
+
+      //   while(i<5){
+      //     document.write(scores[j] + "<br>");
+      //     sum += scores[j];
+      //     j++;
+      //   }
+
+      let c = 50;
+      //   let f = c * (9 / 5) + 32;
+      let f = convert_CelsiusToFahrenheit(c);
+      document.write("Fahrenheit (°F) = " + f + "<br>");
+
+      let celsius = convert_FahrenheitToCelsius(f);
+      document.write("Celsius (°C) = " + celsius + "<br>");
+
+      //   2.oddven
+      //   let x =4;
+      //   document.write(x +" : ")
+      //   let output = check_oddeven(x);
+      let n = 2;
+      oddeven(3);
+    </script>
+  </body>
+</html>
