@@ -1,11 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap");
 
 body {
   font-family: "Mitr", sans-serif;
+  background: rgb(9, 22, 56);
+  background: linear-gradient(
+    106deg,
+    rgba(9, 22, 56, 1) 16%,
+    rgba(9, 22, 56, 0.24) 100%
+  );
 }
 header {
   border-bottom: 2px solid #c1a875;
-  background-color: #091638;
+}
+.header-bg {
+  background-image: url("../images/head_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /* menubar */
 .textheaderlogo {
@@ -25,7 +36,6 @@ header {
 }
 /* home */
 #home {
-  background-color: #091638;
   height: 45rem;
 }
 .home-name-textcolor {
@@ -67,7 +77,9 @@ header {
   border-radius: 20px;
 }
 #home a:hover {
-  color: #e4dcd9;
+  color: white;
+  text-decoration: underline #e4dcd9;
+  text-underline-offset: 0.25em;
 }
 
 .profileimg {
@@ -75,8 +87,7 @@ header {
 }
 /* about me */
 #about-me {
-  background: linear-gradient(to right, #bca17f 50%, #fff 50%);
-  border-bottom: 2px solid #c1a875;
+  margin-bottom: 5rem;
 }
 .text-head-aboutme {
   font-size: calc(80% + 5vmin);
@@ -87,21 +98,24 @@ header {
   max-width: 5rem;
   margin-left: -2%;
 }
-
 .img-aboutme {
   max-width: 35rem;
   margin: auto;
   padding: 2rem 0;
 }
+.about-me-info {
+  border-left: 10px solid white;
+}
 .personal h1,
 .education h1 {
   font-size: calc(70% + 3vmin);
-  color: #091638;
+  color: #fff;
 }
 .personalsubTP,
 .personalinfo,
 .edusubTP,
 .eduinfo {
+  color: #fff;
   font-size: calc(75% + 1vmin);
 }
 .personalsubTP,
@@ -111,14 +125,14 @@ header {
 }
 .personalinfo,
 .eduinfo {
-  font-weight: 400;
+  font-weight: lighter;
 }
 .personal {
   margin-bottom: 10rem;
 }
 #exercises h1 {
   font-size: calc(80% + 4vmin);
-  color: #091638;
+  color: #e4dcd9;
 }
 .logoexercies {
   max-width: 5rem;
@@ -126,28 +140,45 @@ header {
 }
 .card {
   width: 28rem;
+  background-color: transparent;
+  border: 3px solid white;
 }
 .card-img-top {
   margin: 1rem auto;
   height: 200px;
   max-width: 100%;
 }
-.card-text{
+.card-text {
+  color: #fff;
   font-size: calc(70% + 1vmin);
 }
 .btn-view-custom {
-  background-color: #4c3127;
+  background-color: #040d23;
   color: white;
   width: 120px;
+  font-size: 20px;
 }
-#contact {
-  background-color: #091638;
+.card-body a:hover {
+  color: #040d23;
+  text-decoration: underline #040d23;
+  text-underline-offset: 0.25em;
+}
+#contact .col {
+  margin-top: 1rem;
+}
+.contact-bg {
+  background-image: url(../images/footer-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
   color: #e4dcd9;
 }
 .logo-contact-custom {
   max-width: 2.5rem;
 }
-@media (max-width: 767.98px) {
+
+@media (max-width: 768px) {
   .profileimg {
     display: none;
   }
@@ -155,9 +186,6 @@ header {
     padding: 20% 0;
     text-align: center;
     font-size: 4vw;
-  }
-  #about-me {
-    background: linear-gradient(to bottom, #bca17f 50%, #fff 50%);
   }
   .text-head-aboutme {
     margin: -1rem auto auto 0rem;
@@ -169,5 +197,11 @@ header {
   }
   .personal {
     margin-bottom: 4rem;
+  }
+  #about-me .about-me-info {
+    border: none;
+  }
+  .contact-bg {
+    background-position: center;
   }
 }
