@@ -8,31 +8,35 @@ body {
     rgba(9, 22, 56, 1) 16%,
     rgba(9, 22, 56, 0.24) 100%
   );
+  padding-top: 30px;
 }
 header {
   border-bottom: 2px solid #c1a875;
+  background-color: #091638;
 }
 .header-bg {
   background-image: url("../images/head_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 80px;
 }
 /* menubar */
 .textheaderlogo {
   color: #e4dcd9;
   font-weight: 500;
-  font-size: calc(80% + 3vmin);
+  font-size: calc(80% + 2vmin);
   text-transform: uppercase;
 }
 .textmenucustom {
   color: #e4dcd9;
-  font-size: calc(70% + 2vmin);
+  font-size: calc(80% + 1.5vmin);
 }
 .hovermenu a:hover {
   color: white;
   text-decoration: underline #e4dcd9;
   text-underline-offset: 0.25em;
+  
 }
 /* home */
 #home {
@@ -88,6 +92,7 @@ header {
 /* about me */
 #about-me {
   margin-bottom: 5rem;
+  padding-top: 100px;
 }
 .text-head-aboutme {
   font-size: calc(80% + 5vmin);
@@ -130,6 +135,9 @@ header {
 .personal {
   margin-bottom: 10rem;
 }
+#exercises{
+  padding-top: 100px;
+}
 #exercises h1 {
   font-size: calc(80% + 4vmin);
   color: #e4dcd9;
@@ -159,8 +167,8 @@ header {
   font-size: 20px;
 }
 .card-body a:hover {
-  color: #040d23;
-  text-decoration: underline #040d23;
+  color: #fff;
+  text-decoration: underline #fff;
   text-underline-offset: 0.25em;
 }
 #contact .col {
