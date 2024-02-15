@@ -24,13 +24,23 @@
       function oddeven(x) {
         let r = x % 2;
         if (r == 0) {
-          document.write(x + " is even number");
+          document.write(x + " is even number" + "<br>");
         } else {
-          document.write(x + " is odd number");
+          document.write(x + " is odd number" + "<br>");
         }
       }
 
-      function hourTosecond(h) {}
+      function avgHeightArr(h) {
+        document.write("Avg_Height = " + sum / h.length + "<br>");
+      }
+
+      function maxHeightArr(h) {
+        document.write("Max_Height = " + Math.max(...h) + "<br>");
+      }
+
+      function minHeightArr(h) {
+        document.write("Min_height = " + Math.min(...h) + "<br>");
+      }
     </script>
   </head>
 
@@ -59,7 +69,7 @@
       }
       document.write("sum = " + sum + "<br>");
       document.write("Avg = " + sum / scores.length + "<br>");
-      document.write("Max = " + Math.max(...scores)  + "<br>");
+      document.write("Max = " + Math.max(...scores) + "<br>");
       //   document.write(dept);
 
       //   while(i<5){
@@ -82,6 +92,11 @@
       //   let output = check_oddeven(x);
       let n = 2;
       oddeven(3);
+
+      let h = [155, 165, 187, 160, 175, 165, 155, 170, 167, 150];
+      avgHeightArr(h);
+      maxHeightArr(h);
+      minHeightArr(h);
     </script>
   </body>
 </html>
