@@ -4,123 +4,169 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Active Learning 3 : Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body{
+        background-color: rgb(227, 227, 245);
+      }
+    </style>
   </head>
   <body>
-    <h1>รายชื่อนักศึกษา</h1>
-    <ol>
-      <li>6540011014 นาย ณัฐกฤต สร้อยสนธิ์</li>
-      <li>6540011059 นาย ณัฐชยกนธ์ ภาสกนธ์</li>
-    </ol>
-    <h1>แบบฟอร์มลงทะเบียนศิษย์เก่า IT + IS</h1>
-    <form action="https://example.com/" method="get">
-      <label for="name">ชื่อ :</label>
-      <input type="text" name="name" value="" placeholder="กรุณากรอกชื่อ" />
+    <div class="container">
+      <div class="row my-5 g-2">
+        <div class="col-lg-6">
+          <a href="../index.html" class="btn btn-primary mb-3">Home</a>
+          <h1>รายชื่อนักศึกษา</h1>
+          <ol>
+            <li>6540011014 นาย ณัฐกฤต สร้อยสนธิ์</li>
+            <li>6540011059 นาย ณัฐชยกนธ์ ภาสกนธ์</li>
+          </ol>
+          <h1>แบบฟอร์มลงทะเบียนศิษย์เก่า IT + IS</h1>
+          <form action="https://example.com/" method="get">
+            <label for="name" class="col-form-label">ชื่อ :</label>
+            <input
+              type="text"
+              name="name"
+              value=""
+              placeholder="กรุณากรอกชื่อ"
+              class="form-control"
+            />
 
-      <br />
-      <label for="lastname">นามสกุล :</label>
-      <input
-        type="text"
-        name="lastname"
-        value=""
-        placeholder="กรุณากรอกนามสกุล"
-      />
+            <br />
+            <label for="lastname">นามสกุล :</label>
+            <input
+              type="text"
+              name="lastname"
+              value=""
+              placeholder="กรุณากรอกนามสกุล"
+              class="form-control"
+            />
 
-      <br />
-      <label for="idstudent">รหัสนักศึกษา :</label>
-      <input
-        type="text"
-        name="idstudent"
-        value=""
-        maxlength="10"
-        placeholder="กรุณากรอกรหัสนักศึกษา"
-      />
+            <br />
+            <label for="idstudent">รหัสนักศึกษา :</label>
+            <input
+              type="text"
+              name="idstudent"
+              value=""
+              maxlength="10"
+              placeholder="กรุณากรอกรหัสนักศึกษา"
+              class="form-control"
+            />
+            
+            <br />
+            <div class="mb-1">
+              <label for="gender">เพศ :</label>
+            <input type="radio" name="gender" value="Male" class="form-check-input"/> เพศชาย
+            <input type="radio" name="gender" value="Female" class="form-check-input"/> เพศหญิง
 
-      <br />
-      <label for="gender">เพศ :</label>
-      <input type="radio" name="gender" value="Male" /> เพศชาย
-      <input type="radio" name="gender" value="Female" /> เพศหญิง
+            </div>
+            
+            <br />
+            <label for="yearentry">ปีการศึกษาเข้าศึกษา : </label>
+            <input
+              type="text"
+              name="yearentry"
+              maxlength="4"
+              placeholder="ปีการศึกษาเข้าศึกษา(พ.ศ.)"
+              class="form-control"
+            />
 
-      <br />
-      <label for="yearentry">ปีการศึกษาเข้าศึกษา : </label>
-      <input
-        type="text"
-        name="yearentry"
-        maxlength="4"
-        placeholder="ปีการศึกษาเข้าศึกษา(พ.ศ.)"
-      />
+            <br />
+            <label for="address">ที่อยู่ :</label>
+            <textarea
+              name="address"
+              placeholder="กรุณากรอกที่อยู่"
+              cols="30"
+              rows="5"
+              class="form-control"
+            ></textarea>
 
-      <br />
-      <label for="address">ที่อยู่ :</label>
-      <textarea
-        name="address"
-        placeholder="กรุณากรอกที่อยู่"
-        cols="30"
-        rows="10"
-      ></textarea>
+            <br />
+            <label for="email">อีเมลล์ :</label>
+            <input
+              type="email"
+              name="email"
+              value=""
+              size="30"
+              placeholder="กรุณากรอกอีเมลล์"
+              class="form-control"
+            />
 
-      <br />
-      <label for="email">อีเมลล์ :</label>
-      <input
-        type="email"
-        name="email"
-        value=""
-        size="30"
-        placeholder="กรุณากรอกอีเมลล์"
-      />
+            <br />
+            <label for="phone">เบอร์โทรติดต่อ :</label>
+            <input
+              type="tel"
+              name="tel"
+              maxlength="10"
+              placeholder="xxxxxxxxxx"
+              class="form-control"
+            />
 
-      <br />
-      <label for="phone">เบอร์โทรติดต่อ :</label>
-      <input
-        type="tel"
-        name="tel"
-        maxlength="10"
-        placeholder="xxxxxxxxxx"
-      />
+            <br />
 
-      <br />
+            <label for="major">หลักสูตร :</label>
+            <select name="major" class="form-select">
+              <option value="IT">IT</option>
+              <option value="IS">IS</option>
+            </select>
 
-      <label for="major">หลักสูตร :</label>
-      <select name="major">
-        <option value="IT">IT</option>
-        <option value="IS">IS</option>
-      </select>
+            <br />
+            <label for="career">อาชีพปัจจุบัน :</label>
+            <input
+              type="text"
+              name="career"
+              value=""
+              placeholder="กรุณากรอกชื่ออาชีพปัจจุบัน"
+              class="form-control"
+            />
 
-      <br />
-      <label for="career">อาชีพปัจจุบัน :</label>
-      <input
-        type="text"
-        name="career"
-        value=""
-        placeholder="กรุณากรอกชื่ออาชีพปัจจุบัน"
-      />
+            <br />
+            <label for="company">สถานที่ทำงาน :</label>
+            <textarea
+              name="name-addcomp"
+              placeholder="กรุณากรอกชื่อบริษัทและที่อยู่บริษัท"
+              cols="10"
+              rows="5"
+              class="form-control"
+            ></textarea>
 
-      <br />
-      <label for="company">สถานที่ทำงาน :</label>
-      <textarea
-        name="name-addcomp"
-        placeholder="กรุณากรอกชื่อบริษัทและที่อยู่บริษัท"
-        cols="30"
-        rows="10"
-      ></textarea>
+            <br />
+            <label for="jobtype">ประเภทงานที่ทำ :</label>
+            <select name="jobtype" id="jobtype" class="form-select">
+              <option value="webdev">Web Developer</option>
+              <option value="sa">SA</option>
+              <option value="graphic">Graphic Design</option>
+              <option value="digimarketing">Digital Marketing</option>
+            </select>
 
-      <br>
-      <label for="jobtype">ประเภทงานที่ทำ :</label>
-      <select name="" id="">
-        <option value="webdev">Web Developer</option>
-        <option value="sa">SA</option>
-        <option value="graphic">Graphic Design</option>
-        <option value="digimarketing">Digital Marketing</option>
-      </select>
+            <br />
+            <label for="profilepic">รูปถ่ายตนเอง :</label>
+            <input type="file" name="profilepic" class="form-control"/>
 
-      <br>
-      <label for="profilepic">รูปถ่ายตนเอง :</label>
-      <input type="file" name="profilepic">
+            <br />
+            <input type="submit" value="ลงทะเบียน" class="btn btn-success"/>
+            <input type="reset" value="ล้างข้อมูล" class="btn btn-danger"/>
+          </form>
+        </div>
+      </div>
+    </div>
 
+    
 
-      <br />
-      <input type="submit" value="ลงทะเบียน"/>
-      <input type="reset" value="ล้างข้อมูล">
-    </form>
-    <a href="../index.html">Home</a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
