@@ -10,29 +10,29 @@ body {
   );
   padding-top: 30px;
 }
-header {
+.bg-nav {
   border-bottom: 2px solid #c1a875;
   background-color: #091638;
 }
-.header-bg {
-  background-image: url("../images/head_bg.svg");
+.bg-main {
+  background-image: url("../images/bg_main.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 80px;
 }
 /* menubar */
-.textheaderlogo {
+.text-nav-startside {
   color: #e4dcd9;
   font-weight: 500;
   font-size: calc(80% + 2vmin);
   text-transform: uppercase;
 }
-.textmenucustom {
+.tex-menu-custom {
   color: #e4dcd9;
   font-size: calc(80% + 1.5vmin);
 }
-.hovermenu a:hover {
+.hover-menu a:hover {
   color: white;
   text-decoration: underline #e4dcd9;
   text-underline-offset: 0.25em;
@@ -86,7 +86,7 @@ header {
   text-underline-offset: 0.25em;
 }
 
-.profileimg {
+.home-profile-img {
   width: 25rem;
 }
 /* about me */
@@ -97,19 +97,21 @@ header {
 .text-head-aboutme {
   font-size: calc(80% + 5vmin);
   color: #e4dcd9;
-  -webkit-text-stroke: 1px black;
 }
-.usericon {
+.aboutme-user-icon {
   max-width: 5rem;
   margin-left: -2%;
 }
-.img-aboutme {
-  max-width: 35rem;
+.aboutme-profile-img {
+  max-width: 30rem;
   margin: auto;
   padding: 2rem 0;
 }
-.about-me-info {
+.aboutme-info {
   border-left: 10px solid white;
+}
+.personal{
+  margin-bottom: 8rem;
 }
 .personal h1,
 .education h1 {
@@ -132,9 +134,7 @@ header {
 .eduinfo {
   font-weight: lighter;
 }
-.personal {
-  margin-bottom: 10rem;
-}
+
 #exercises{
   padding-top: 100px;
 }
@@ -142,7 +142,7 @@ header {
   font-size: calc(80% + 4vmin);
   color: #e4dcd9;
 }
-.logoexercies {
+.exercies-icon {
   max-width: 5rem;
   margin-left: -1rem;
 }
@@ -182,12 +182,12 @@ header {
   height: 100%;
   color: #e4dcd9;
 }
-.logo-contact-custom {
+.contact-icon {
   max-width: 2.5rem;
 }
 
 @media (max-width: 768px) {
-  .profileimg {
+  .home-profile-img {
     display: none;
   }
   .home-start-side {
@@ -198,7 +198,7 @@ header {
   .text-head-aboutme {
     margin: -1rem auto auto 0rem;
   }
-  .img-aboutme {
+  .aboutme-profile-img {
     padding: 0;
     max-width: 24rem;
     margin: 1rem auto 3rem auto;
@@ -206,7 +206,7 @@ header {
   .personal {
     margin-bottom: 4rem;
   }
-  #about-me .about-me-info {
+  #about-me .aboutme-info {
     border: none;
   }
   .contact-bg {
